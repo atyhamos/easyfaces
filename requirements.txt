@@ -1,0 +1,6 @@
+numpy-stl
+opencv-python
+opencv-utils
+pyTelegramBotAPI
+requests
+
