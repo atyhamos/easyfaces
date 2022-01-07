@@ -7,9 +7,8 @@ import telebot
 from telebot.types import BotCommand, InlineKeyboardButton, InlineKeyboardMarkup
 
 # TelegramBot
-API_KEY = os.getenv('API_KEY') 
+API_KEY = os.environ["API_KEY"]
 bot = telebot.TeleBot(API_KEY)
-
 
 command = [BotCommand("start","Starts the bot"),]
 
@@ -227,8 +226,8 @@ def get_set_name(message):
     return
   print(f"str(id): {str(id)}, set_name[id]: {set_name[id]}")
   length = len(set_name[id])  
-  if str(id) not in set_name[id] or set_name[id][length - 17:] != '_by_EasyFacesBot':
-    print('This sticker pack does not belong to you.')
+  if str(id) not in set_name[id] or set_name[id][length - 16:] != '_by_EasyFacesBot':
+    print('This sticker pack does not belong to you. ' + set_name[id][length - 16:])
     bot.send_message(id, text='This sticker pack does not belong to you.')
     return
   chat_text = 'Please send an emoji to associate with your sticker.'

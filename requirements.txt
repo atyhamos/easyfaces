@@ -1,6 +1,10 @@
 numpy-stl
-opencv-python
+opencv-python~=4.5.5.62
 opencv-utils
 pyTelegramBotAPI
-requests
+requests~=2.27.1
 
+
+pip~=20.1.1
+wheel~=0.34.2
+setuptools~=56.0.0
