@@ -243,6 +243,7 @@ def add_to_pack_final(message):
       stickers = bot.get_sticker_set(set_name[id]).stickers
       new_sticker = stickers[len(stickers) - 1]
       bot.send_sticker(id, new_sticker.file_id)
+      bot.send_message(id, text="Sticker added successfully. You may need to remove the sticker pack and add it again, and restart Telegram for the changes to take place")
     else:
       bot.send_message(id, text="Adding failed. Please ensure you send an emoji and start again.")
   except Exception as e:
