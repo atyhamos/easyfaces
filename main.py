@@ -251,7 +251,8 @@ def add_to_pack_final(message):
 
   
 def get_photo(message):
-  file_id = message.photo[3].file_id
+  length = len(message.photo) - 1
+  file_id = message.photo[length].file_id
   file_path_url = f'https://api.telegram.org/bot{API_KEY}/getFile?file_id={file_id}'
   file_path_response = requests.get(file_path_url)
   dict = file_path_response.json()
