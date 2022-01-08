@@ -62,7 +62,7 @@ def start(message):
   else:
     chat_user = message.chat.title
   
-  message_text = f'Hi {chat_user}! Send me a .jpg of faces and I will extract them out to stickers for you!'
+  message_text = f'Hi {chat_user}! Send me a photo of faces and I will extract them out to stickers for you!'
   
   bot.reply_to(message, message_text)
 
@@ -110,7 +110,7 @@ def submit(message):
 
   buttons.append(row)
     
-  chat_text = 'Please select the photo you would like to turn into a sticker'
+  chat_text = 'Please select the photo you would like to turn into a sticker:'
     
   bot.send_message(
     chat_id=message.chat.id,
@@ -243,7 +243,7 @@ def add_to_pack_final(message):
       stickers = bot.get_sticker_set(set_name[id]).stickers
       new_sticker = stickers[len(stickers) - 1]
       bot.send_sticker(id, new_sticker.file_id)
-      bot.send_message(id, text="Sticker added successfully. You may need to remove the sticker pack and add it again, and restart Telegram for the changes to take place")
+      bot.send_message(id, text="Sticker added successfully. You may need to remove the sticker pack and add it again, and restart Telegram for the changes to take place.")
     else:
       bot.send_message(id, text="Adding failed. Please ensure you send an emoji and start again.")
   except Exception as e:
@@ -264,7 +264,7 @@ def get_photo(message):
 
 def photo_chosen(chat_id,message):
 
-  bot.send_message(chat_id=chat_id, text='Please select the photo you would like to turn into a sticker')
+  bot.send_message(chat_id=chat_id, text='Please select the photo you would like to turn into a sticker:')
   #Retrieve test
   message_text = message.text
   return message_text
