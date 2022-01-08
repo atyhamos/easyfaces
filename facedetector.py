@@ -10,7 +10,7 @@ def convert(image):
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
     faces = face_cascade.detectMultiScale(
         gray,
-        scaleFactor=1.1,
+        scaleFactor=1.05,
         minNeighbors=8,
         minSize=(30, 30),
         maxSize=(512, 512)
