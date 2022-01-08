@@ -12,8 +12,7 @@ def convert(image):
         gray,
         scaleFactor=1.05,
         minNeighbors=8,
-        minSize=(30, 30),
-        maxSize=(512, 512)
+        minSize=(10, 10)
     )
 
     print("[INFO] Found {0} Faces!".format(len(faces)))
