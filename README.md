@@ -5,6 +5,9 @@ https://t.me/EasyFacesBot
 
 Telegram Bot by Amos Tan and Kai Yi Chen for Hack&Roll 2022
 
+[![easyfaces](https://user-images.githubusercontent.com/44387213/148718534-4ed126f5-b2ba-45bb-bde3-452ca335baff.png)](https://www.youtube.com/watch?v=wAng1cpksys)
+![gallery](https://user-images.githubusercontent.com/44387213/148718594-2adbb951-be33-492d-986d-6d81fa3ed15b.jpg)
+
 ## Inspiration
 Stickers are becoming increasingly popular for use in messaging apps such as Telegram, but creating custom stickers may be a daunting task for beginners with no experience in sticker formatting. In particular, creating stickers of faces such as family and friends can be a hassle. EasyFacesBot bridges the difficulty gap and provides an easy way for users to create stickers of their family and friends.
 
