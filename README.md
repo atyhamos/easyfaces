@@ -1,6 +1,8 @@
 ![easyfaces](https://user-images.githubusercontent.com/44387213/148630516-1774acb4-8aaf-4d7c-be77-c9ada635f87e.png)
 
 # EasyFaces
+https://t.me/EasyFacesBot
+
 Telegram Bot by Amos Tan and Kai Yi Chen for Hack&Roll 2022
 
 ## Inspiration
